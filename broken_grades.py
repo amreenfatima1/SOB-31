@@ -19,28 +19,31 @@
 # Grade: F
 # Student iis failing.
 
+
 exam_one = int(input("Input exam grade one: "))
 
+# Add the int() function
 exam_two = int(input("Input exam grade two: "))
-
+#replace str with int() function
 exam_three = int(input("Input exam grade three: "))
 
+#Adding comma to sepearate elements within list
 grades = [exam_one, exam_two, exam_three]
 sum = 0
-for grade in grades:
+for grade in grades:  #changes 'grade' to 'grades'
   sum = sum + grade
 
-avg = sum / len(grades)
+avg = sum / len(grades) #changing 'grdes' to 'grades'
 
 if avg >= 90:
     letter_grade = "A"
-elif avg >= 80 and avg < 90:
+elif avg >= 80 and avg < 90:  #Add a ':' after 90
     letter_grade = "B"
 elif avg > 69 and avg < 80:
-    letter_grade = "C"
+    letter_grade = "C"  #change single quote to double quote
 elif avg <= 69 and avg >= 65:
     letter_grade = "D"
-else:
+else:      #change elif to else statement
     letter_grade = "F"
 
 for grade in grades:
@@ -50,7 +53,7 @@ for grade in grades:
 
     print("Grade: " + letter_grade)
 
-if letter_grade == "F":
-    print ("Student is failing.")
+if letter_grade == "F":   #change 'letter-grade' varaible with 'letter_grade'
+    print ("Student is failing.")   # Added parenthesis
 else:
-    print ("Student is passing.")
+    print ("Student is passing.")   # Added parenthesis
