@@ -10,7 +10,7 @@ year = int(input("Greetings! What is your year of origin? ")) #Added parenthesis
 
 if year <= 1900:  #added ':' after 1900
     print ("Woah, that's the past!") #added double quotes
-elif year > 1900 and year < 2021: #replaced '&&' with 'and'
+elif year > 1900 and year < 2020: #replaced '&&' with 'and'
     print ("That's totally the present!")
 else: #replaced 'elif' with else
     print ("Far out, that's the future!!")
